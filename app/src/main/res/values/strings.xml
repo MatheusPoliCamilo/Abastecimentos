@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cadastro de Abastecimentos</string>
+    <string name="quilometragem">Quilometragem</string>
+    <string name="posto">Posto</string>
+    <string name="litros">Litros</string>
+    <string name="clique_aqui_para_informar_a_data">Clique aqui para informar a data</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+    <string name="abastecimentos">Abastecimentos</string>
+    <string name="autonomia">Autonomia</string>
+    <string name="abastecimento">Abastecimento</string>
+
+    <string-array name="opcoes_prioridade">
+        <item>Texaco</item>
+        <item>Shell</item>
+        <item>Petrobras</item>
+        <item>Ipiranga</item>
+        <item>Outros</item>
+    </string-array>
+</resources>
