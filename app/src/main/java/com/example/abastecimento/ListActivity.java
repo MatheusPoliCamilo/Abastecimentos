@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.abastecimento.R;
 import com.example.abastecimento.adapter.AbastecimentoAdapter;
 import com.example.abastecimento.model.AbastecimentoDao;
 

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
+import io.realm.Sort;
 
 public class AbastecimentoDao {
 
@@ -11,7 +12,7 @@ public class AbastecimentoDao {
 
     public ArrayList<Abastecimento> obterLista() {
         Realm realm = Realm.getDefaultInstance();
-        RealmResults lista = realm.where(Abastecimento.class).findAll();
+        RealmResults lista = realm.where(Abastecimento.class).findAll().sort("quilometragem", Sort.DESCENDING);
         bancoDeDados.clear();
         bancoDeDados.addAll(realm.copyFromRealm(lista));
         return bancoDeDados;
