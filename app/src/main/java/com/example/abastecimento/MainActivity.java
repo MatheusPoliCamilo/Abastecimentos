@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 abastecimentos.get(abastecimentos.size() - 1).getQuilometragem();
         double litros = 0.0;
 
-        for (int i = 0; i < abastecimentos.size() - 1; i++) {
+        for (int i = 1; i < abastecimentos.size(); i++) {
             litros += abastecimentos.get(i).getLitros();
         }
 
