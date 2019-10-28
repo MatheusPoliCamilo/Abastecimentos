@@ -47,7 +47,7 @@ public class ListActivity extends AppCompatActivity {
             } else if (resultCode == 201) {
                 Toast.makeText(this, "Abastecimento cadastrado com sucesso", Toast.LENGTH_LONG).show();
                 int posicao = AbastecimentoDao.obterInstancia().obterLista().size() - 1;
-                adaptador.notifyItemInserted(posicao);
+                adaptador.notifyItemInserted(0);
                 rvAbastecimentos.smoothScrollToPosition(posicao);
             } else if (resultCode == 202) {
                 Toast.makeText(this, "Abastecimento removido com sucesso", Toast.LENGTH_LONG).show();
