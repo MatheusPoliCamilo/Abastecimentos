@@ -11,6 +11,7 @@ public class Abastecimento extends RealmObject {
     private int quilometragem;
     private String posto;
     private double litros;
+    private String caminhoFotografia;
 
     public Abastecimento() {
         id = UUID.randomUUID().toString();
@@ -42,5 +43,13 @@ public class Abastecimento extends RealmObject {
 
     public void setLitros(Double litros) {
         this.litros = litros;
+    }
+
+    public String getCaminhoFotografia() {
+        return caminhoFotografia;
+    }
+
+    public void setCaminhoFotografia(String caminhoFotografia) {
+        this.caminhoFotografia = caminhoFotografia;
     }
 }
